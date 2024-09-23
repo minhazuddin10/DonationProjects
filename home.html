@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Question</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/7ee369b1ec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <header>
+    <nav class="bg-gray-100  p-5">
+      <div class="max-w-7xl mx-auto md:flex space-y-2 justify-between items-center">
+
+
+        <div>
+          <button id="home" class="font-bold bg-lime-400 text-black py-2 px-8 rounded">
+            Home
+          </button>
+        </div>
+
+
+        <div class="flex items-center space-x-2">
+          <img src="assets/logo.png" alt="Donate Icon" class="w-8 h-8" />
+          <span class="text-3xl font-extrabold">Donate Bangladesh</span>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <img src="assets/coin.png" alt="Amount Icon" class="w-8 h-8" />
+          <span class="text-lg font-bold"><span id="main-amount">5500</span> BDT</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <main class="mt-10 md:ms-32 overflow-hidden max-w-7xl mx-auto space-y-1 ">
+
+
+    <h1 class="text-5xl font-extrabold ms-2 mb-10">Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
+
+    <div class="collapse collapse-arrow bg-base-200 ms-2 border border-3">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+      <div class="collapse-content">
+        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that
+          programs can change the document structure, style, and content. The DOM represents the document as nodes and
+          objects; that way, programming languages can interact with the page.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200 ms-2  border border-3">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How Do you Select an element from the DOM ?</div>
+      <div class="collapse-content">
+        <p>Using getElementById: The getElementById method allows to select an element by its ID </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200 ms-2  border border-3">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and why it is
+        useful?</div>
+      <div class="collapse-content">
+        <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher
+          level in the DOM than the element on which the event originated</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200 ms-2  border border-3">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element attributes an styles using the
+        DOM?</div>
+      <div class="collapse-content">
+        <p>The classList object only provide methods to change the class of an element. If we want to change other
+          attributes like id , href , or src , we can use the setAttribute() method.</p>
+      </div>
+    </div>
+
+
+  </main>
+
+  <script src="js/index.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/function.js"></script>
+</body>
+
+</html>
