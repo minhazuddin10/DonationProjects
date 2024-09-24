@@ -32,7 +32,7 @@
 
         <div class="flex items-center space-x-2">
           <img src="assets/coin.png" alt="Amount Icon" class="w-8 h-8" />
-          <span class="text-lg font-bold"><span id="main-amount">5500</span> BDT</span>
+          <span class="text-lg font-bold"><span id="main-amount2">5500</span> BDT</span>
         </div>
       </div>
     </nav>
@@ -82,7 +82,10 @@
 
 
   </main>
-
+  <script>
+    var value = localStorage.getItem("Value");
+    document.getElementById("main-amount2").textContent = value;
+  </script>
   <script src="js/index.js"></script>
   <script src="js/home.js"></script>
   <script src="js/function.js"></script>

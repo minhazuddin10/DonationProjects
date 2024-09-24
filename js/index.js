@@ -236,4 +236,7 @@ document.getElementById("donation-tab").addEventListener("click", function () {
 document.getElementById("blog").addEventListener("click", function () {
 
     window.location.href = "./home.html"
+    var value = document.getElementById("main-amount").innerText;
+    localStorage.setItem("Value", value);
 })
+
